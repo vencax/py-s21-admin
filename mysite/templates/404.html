@@ -1,0 +1,10 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans 'pageNotFound' %}{% endblock %}
+
+{% block content %}
+  <h1>{% trans 'pageNotFound' %}</h1>
+  <div>{% trans 'pageNotFoundDesc' %}. <a href="/">{% trans 'returnToIndex' %}</a></div>
+{% endblock %}
+

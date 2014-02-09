@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load i18n cache %}
+
+<html>
+  <head>
+  	<title>{% block title %}{{ site_settings.DEFAULT_TITLE }}{% endblock %}</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="author" content="Venca_X">
+    <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
+    {% block extrastyle %}{% endblock %}
+    {% block extrahead %}{% endblock %}
+    {% block blockbots %}{% endblock %}
+  </head>
+
+  <body class="{% block bodyclass %}normal{% endblock %}">
+    	
+	<div id="header">
+	{% block header %}
+  	{% endblock %}
+    </div>
+
+
+    <div class="breadcrumbs">{% block breadcrumbs %}{% endblock %}</div>
+      
+	<div id="page">
+	  {% block content %}
+	  <div id="content-main">
+	  </div><!-- end #content-main -->	
+	  {% endblock %}
+	  <br class="clearfix" />
+	</div><!-- end #page -->
+	    
+    <footer>{% block footer %}{% endblock %}</footer>
+
+  </body>
+</html>

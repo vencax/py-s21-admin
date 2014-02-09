@@ -1,0 +1,7 @@
+Django>=1.3
+south
+git+git://github.com/matthewwithanm/django-classbasedsettings
+git+git://github.com/vencax/django-command-runner.git
+git+git://github.com/vencax/django-samba-admin.git
+git+git://github.com/vencax/django-sql-nss-admin.git
+git+git://github.com/vencax/django-dhcp-admin.git
