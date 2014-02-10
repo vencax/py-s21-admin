@@ -18,6 +18,10 @@ class MyProductionSettings(MyCommonSettings):
         }
     }
     
+    COMMAND_TARGET_USER = os.environ['COMMAND_TARGET_USER']
+    COMMAND_TARGET_SERVER = 'localhost'
+    COMMAND_TARGET_PASSWD = os.environ['COMMAND_TARGET_PASSWD']
+    
     def __init__(self):
         super(MyProductionSettings, self).__init__()
         
