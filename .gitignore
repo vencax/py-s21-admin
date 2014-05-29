@@ -35,6 +35,7 @@ nosetests.xml
 .project
 .pydevproject
 .django-secret
+.settings
 
-sqlite.db
+sqlite.db*
 mysite/mysettings/dev.py
