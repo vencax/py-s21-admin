@@ -1,6 +1,6 @@
 django==1.4
 south
-python-mysqldb
+MySQL-python
 git+git://github.com/matthewwithanm/django-classbasedsettings
 git+git://github.com/vencax/django-command-runner.git
 git+git://github.com/vencax/django-samba-admin.git
