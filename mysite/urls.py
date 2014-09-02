@@ -19,16 +19,17 @@ urlpatterns = patterns('',
 #    url(r'^agenda/', include('schoolagenda.urls')),
 )
 
-    
+
 handler404 = 'django.views.defaults.page_not_found'
 handler500 = 'django.views.defaults.server_error'
 
 # enable serving static files on debugging server
 if settings.SERVE_STATICS:
-    urlpatterns += patterns('',
-        (r'^%s(?P<path>.*)$' % settings.MEDIA_URL[1:], 'django.views.static.serve', {
+    urlpatterns += patterns('', (
+        r'^%s(?P<path>.*)$' % settings.MEDIA_URL[1:],
+        'django.views.static.serve', {
             'document_root': settings.MEDIA_ROOT,
-        }),
-    )
-    
+        }
+    ), )
+
     urlpatterns += staticfiles_urlpatterns()
