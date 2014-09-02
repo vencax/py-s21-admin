@@ -39,3 +39,6 @@ nosetests.xml
 
 sqlite.db*
 mysite/mysettings/dev.py
+venv
+.env
+static/*
