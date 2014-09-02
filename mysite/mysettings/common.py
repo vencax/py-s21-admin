@@ -14,7 +14,7 @@ installed_apps = (
     'south',
     'nss_admin',
     'samba_admin',
-    'dhcp_admin',
+#     'dhcp_admin',
 #    'building_admin',
 #    'school_sched',
 #    'schoolagenda',
