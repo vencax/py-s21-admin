@@ -41,4 +41,5 @@ sqlite.db*
 mysite/mysettings/dev.py
 venv
 .env
+migrate
 static/*
